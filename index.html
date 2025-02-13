@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script crossorigin src="https://unpkg.com/react@18/umd/react.development.js"></script>
+<script crossorigin src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+<script src="https://unpkg.com/@babel/standalone"></script>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="root"></div>
+
+    <script type="text/babel">
+        // React Component
+        function App() {
+            
+
+            return (
+                
+                <div className="app">
+                   
+                    <h1>Topics Covered</h1>
+                    <p>The following is a list of all the topics we Cover in the MDN learning area</p>
+                    <div className="container">
+                        <a href="#">getting stated with the web</a>
+                    <p>Provide a practical introduction to web development for complete beginners</p>
+                  </div>
+                    <div className="container">
+                        <a href="#">HTML -- Structuring the web</a>
+                    <p>Learn about the basic building blocks of HTML and how to use them to create a web page</p>
+                    </div>
+                    <div className="container">
+                        <a href="#">CSS --  Styling the web</a>
+                    <p>CSS stands for Cascading Style Sheets
+CSS describes how HTML elements are to be displayed on screen, paper, or in other media
+CSS saves a lot of work. It can control the layout of multiple web pages all at once
+External stylesheets are stored in CSS files </p>
+                </div>
+                </div>
+            );
+        }
+
+        // Render React App into the DOM
+        ReactDOM.render(<App />, document.getElementById('root'));
+    </script>
+</body>
+</html>
